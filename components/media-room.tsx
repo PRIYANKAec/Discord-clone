@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import {LiveKitRoom, VideoConference} from "@livekit/components-react";
-import "@LiveKit/components-styles";
+import "@livekit/components-styles";
 import { Channel } from "@prisma/client";
 import { useUser } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react"; 
