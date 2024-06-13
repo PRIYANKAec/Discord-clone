@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Fragment, useRef, ElementRef } from "react";
 import { format } from "date-fns";
@@ -67,7 +67,7 @@ export const ChatMessages = ({
         chatRef,
         bottomRef,
         loadMore: fetchNextPage,
-        shouldLoadMore: !isFetchingNextPage && !!hasNextPage,
+        shouldLoadMore: !isFetchingNextPage && hasNextPage,
         count: data?.pages?.[0]?.items?.length ?? 0,
       })
 
