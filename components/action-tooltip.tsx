@@ -2,18 +2,18 @@
 
 import {
     Tooltip,
-    TooltipProvider, 
     TooltipContent,
-    TooltipTrigger
+    TooltipProvider,
+    TooltipTrigger,
 } from "@/components/ui/tooltip";
+import React from "react";
 
 interface ActionTooltipProps {
-    label: string;
-    children :React.ReactNode;
-    side?:"top" | "right" | "bottom"| "left" ;
-    align?: "start" | "center" | "end";
+    label : string;
+    children: React.ReactNode;
+    side?: "top" | "right" | "bottom" | "left",
+    align?: "start" | "center" | "end"; 
 }
-
 
 export const ActionTooltip = ({
     label,
@@ -21,7 +21,6 @@ export const ActionTooltip = ({
     side,
     align
 }: ActionTooltipProps) => {
-
     return (
         <TooltipProvider>
             <Tooltip delayDuration={50}>
@@ -29,9 +28,9 @@ export const ActionTooltip = ({
                     {children}
                 </TooltipTrigger>
                 <TooltipContent side={side} align={align}>
-                <p className="font-semibold text-sm capitalize">
-                {label.toLowerCase()}
-                </p>
+                    <p className="font-semibold text-sm capitalize">
+                        {label.toLowerCase()}
+                    </p>
                 </TooltipContent>
             </Tooltip>
         </TooltipProvider>

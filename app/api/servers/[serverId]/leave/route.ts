@@ -3,7 +3,6 @@ import { NextResponse } from 'next/server';
 import { currentProfile } from '@/lib/current-profile';
 import { db } from '@/lib/db';
 
-
 export async function PATCH(
     req: Request,
     { params }: { params: { serverId: string } }
@@ -42,7 +41,6 @@ export async function PATCH(
 
         return NextResponse.json(server);
     } catch(error) {
-        console.log("[SERVER_ID_LEAVE]",error);
         return new NextResponse('Internal Error', { status: 500 });
     }
 }

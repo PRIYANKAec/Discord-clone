@@ -1,7 +1,8 @@
 import { currentProfile } from "@/lib/current-profile";
-import { db } from "@/lib/db";
-import { redirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
+
+import { redirectToSignIn } from "@clerk/nextjs";
+import { db } from "@/lib/db";
 
 interface ServerIdPageProps {
     params: {
@@ -14,7 +15,6 @@ const ServerIdPage = async ({
 }: ServerIdPageProps) => {
     const profile = await currentProfile();
 
-
     if(!profile) {
         return redirectToSignIn();
     }
@@ -24,7 +24,7 @@ const ServerIdPage = async ({
             id: params.serverId,
             members: {
                 some: {
-                    profileId : profile.id
+                    profileId: profile.id,
                 }
             }
         },
@@ -33,7 +33,7 @@ const ServerIdPage = async ({
                 where: {
                     name: "general"
                 },
-                orderBy:{
+                orderBy: {
                     createdAt: "asc"
                 }
             }
