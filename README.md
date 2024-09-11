@@ -49,7 +49,7 @@ To view the webpage images, navigate to ```Output_Images ```
 
 ## Deployment Link
 
-[https://discord-clone](https://discord-clone-l3wowkj4p-priyankaecs-projects.vercel.app/)
+[https://discord-clone](https://discord-clone-xi-one.vercel.app/)
 
 ## Learning Experience
 
