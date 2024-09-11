@@ -4,6 +4,8 @@ This project is an Discord Clone that is build using the Next.js , React Js , Ty
 
 ![MasterHead](https://github.com/PRIYANKAec/Discord-clone/blob/main/Output_Images/RealTime%20Chat.jpeg)
 
+https://github.com/user-attachments/assets/a080e953-0681-4b83-9390-6712ae72be47
+
 ## Tech Stacks
 - Frontend: Next.js, React.js, TypeScript
 - UI Libraries: ShadCN UI, Tailwind CSS
