@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/a080e953-0681-4b83-9390-6712ae72be47
 - Audio/Video Calls: Livekit
 - Web Deployment: Railway
 
-## Key Features 
+## Key Features  
 
 - Real-time messaging using Socket.io
 - Send attachments as messages using UploadThing 
